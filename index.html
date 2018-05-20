@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					Software development history
+					<br/>
+					<img src="./code.jpg" width="600px"/> <br/>
+					<span style="font-style: italic">Artur Kasperek</span>
+					<aside class="notes">
+						Hello.  First of all, let me thank you all for coming here today. My name is Artur, today I want to talk about history of software development.
+						I hope that my presentation would be interesting for You. If you have any questions it would be highly appreciated if you ask them
+						on the end of my presentation, thanks :)
+					</aside>
+				</section>
+				<section>
+					Presentation Plan: <br/><br/>
+					<ul>
+						<li>Born of software development</li>
+						<li>First software companies</li>
+						<li>Waterfall approach</li>
+						<li>Scrum approach</li>
+						<li>Summary & Future</li>
+					</ul>
+					<br/>
+					<aside class="notes">
+						Now I want to show plan of my presentation.
+						First of all I want to talk about times when software production was on early stage of development.
+						Next I want talk more about first approach in which programmers made applications.
+						On the end I want talk more about contemporary solutions used to make software
+					</aside>
+				</section>
+				<section>
+					Old times ( 1939 - 70s ) <br/>
+					<img src="./old.jpg">
+					<aside class="notes">
+						The first computers were very limited. That computers were design to solve only one algorithm problem, reprogramming was hard and
+						required rebuild of some part of machine. Next stage was making programmable computers. First programmable computers used punched card to load program, you can see example on image.
+						Debugging programs saved on punched card was very hard, because it was't possible to easly change code.
+						So it's obvious that makeing programs at that time was very expensive.
+						Only US government and army could afford it
+					</aside>
+				</section>
+				<section>
+					First software companies ( 1975+ ) <br/>
+					<img width="600px" src="./windows-old.png">
+					<aside class="notes">
+						70's become groundbreaking decade. Ordinary people wanted to use power of computers.
+						It was time of born Microsoft and Apple companies. Apple created computer which was simple enough to use by not
+						technical user. Microsfot at that time worked together with Apple, they provided software for them.
+						Global access by people to computers caused increased demand for software.
+						Microsoft and other software companies started to hire thousands of programmers to provide new programs for users.
+					</aside>
+				</section>
+				<section>
+					Waterfall approach <br/>
+					<img width="600px" src="./watterfal.png"/>
+					<aside class="notes">
+						On the beginning model of software development was very fixed. It's called waterfall cause of fixed stages. On image you
+						should see all stages of that model. After writing down requirements developers started making program in one scope. After that
+						when program was done testers made test and program was released. That model have one big defect, it does't include fact that
+						user requirements change in time and software need to modify in time.
+					</aside>
+				</section>
+				<section>
+					Scrum approach <br/>
+					<img width="600px" style="background-color: white" src="./scrum.png"/>
+					<aside class="notes">
+						After some time companies started to use different model. It's called scrum approach. Application is made incrementally.
+						Each iteration should provide product which is ready to test. Iteration in that model is called sprint. Typical sprint should
+						take not more then 1 week. On the beginning of sprint hole team make meeting where it is determined what is to be done.
+						That approach is much more flexible then waterfall, software company can follow different user requirements. Also client of
+						companies which use scrum charge client regularly depending from how many programmers in some spint worked on project.
+						Everything is more flexible :).
+					</aside>
+				</section>
+				<section>
+					Summary & <br/> Couple worlds about future <br />
+					<img src="./cloud.jpg" width="600px">
+					<aside class="notes">
+						Thanks to popularization of computers making software become nowadays very popular. On the beginning process was very fixed. Nowadays
+						thanks to scrum approach software companies can make programs which grow together with user :).
+						Most of modern applications is hosted in internet ( like that presentation ;) ). Thanks that we don't have to even install software on our machines,
+						browser it's all what we need. Cloud is a future!
+					</aside>
+				</section>
+				<section>
+					Thanks ! <br/>
+					QA ?
+					<aside class="notes">
+						Thanks for you attention. Do you have some questions ?
+					</aside>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
